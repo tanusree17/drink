@@ -1,0 +1,8 @@
+Build Image:
+
+docker build -t assignment -f Dockerfile.assignment .
+
+
+Run Container:
+
+docker run -tid --name assignment -p 3000:3000 -v /home/msuser1:/host_msuser1 -v /home/msuser1/workspace:/workspace/ assignment

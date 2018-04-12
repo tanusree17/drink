@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="drinkprime.com.assignment.MainActivity">
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="59dp"
+        android:src="@drawable/name"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="-4dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Below and create your FREE Account"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="181dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:textColor="#747376"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:paddingLeft = "10dp"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:textColor="#747376"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_above="@+id/editText4"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:paddingLeft = "10dp"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textColor="#747376"
+        android:inputType="phone"
+        android:textSize="15dp"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:hint="Mobile Number"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_above="@+id/editText5"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:paddingLeft = "10dp"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textColor="#747376"
+        android:textSize="15dp"
+        android:inputType="textPersonName"
+        android:hint="City"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:paddingLeft = "10dp"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="75dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="181dp"
+        android:textStyle="bold"
+        android:text="Already have an Account? Login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
